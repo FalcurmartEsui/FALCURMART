@@ -295,12 +295,13 @@
     <h2>Clothing</h2>
     <a href=""> View all</a>
     <div class="product-grid">
-        
-        <a href="Product files/Home product Details.html" class="product-card">
+      
+        <div class="product-card">
             <img src="image/bomber_anthracite_front_shopify_720x.png" alt="">
+           </a>
         <H3>Men black Hoodie</H3>
          <P><span class="nir">#</span>30,000</P>  
-         <h4>Classic Black Hoddie the perfect blend of style and comfort</h4>
+         <h4 class="pro-tit">Classic Black Hoddie the perfect blend of style and comfort</h4>
         <div class="star-ra">
             <i class="fa fa-star" aria-hidden="true"></i>
             
@@ -311,17 +312,16 @@
             <i class="fa fa-star-half" aria-hidden="true"></i> 
         </div>
 
-        <button class="btno"> ADD TO CART <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-    </a>
-
+        <button class="add-to-cart"> ADD TO CART <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+        </div>
 
         <div class="product-card">
             <img src="ProductImg/3fb995dc58c4653b6009997a3421ab3.jpeg" alt="">
          <h3>Casual Hoddie</h3>
          <P><span class="nir">#</span>40,000</P>
-         <h4>Classic Casual Dope Hoddie the perfect blend of style and comfort</h4>
+         <h4 class="pro-tit">Classic Casual Dope Hoddie the perfect blend of style and comfort</h4>
         
-        <button class="btno"> ADD TO CART <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+        <button class="add-to-cart"> ADD TO CART <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
         </div>
 
 
@@ -329,23 +329,25 @@
             <img src="ProductImg/Men'sPersonalityTrendy PatchworkComfortable CasualSneakers, NicheDesign Lace-UpHigh-Top VulcanizedShoes, HikingCouple's CasualWhite Shoes.jpeg" alt="">
         <h3> White Sneakers</h3>
         <P><span class="nir">#</span>18,000</P>
-        <h4>Sleek White Sneakers - Elevate your style Effortlessly</h4>
+        <h4 class="pro-tit">Sleek White Sneakers - Elevate your style Effortlessly</h4>
        
-        <button class="btno"> ADD TO CART <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+        <button class="add-to-cart"> ADD TO CART <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
         </div>
 
-
-
-        <a href="Product files/Home product Details3.html" class="product-card">
+   <div class="product-card">
+     <a href="Product files/Home product Details3.html" class="product-card">
+         
              <img src="ProductImg/15_Trendy_Outfit Grids_For_Men_To Stay_In_Style.jpeg">
+             </a>
+
         <h3>Comlect g</h3>
         <P><span class="nir">#</span>60,000</P>
-        <h4>Ultimate Style Bundle - The perfect Head - to - toe look</h4>
+        <h4 class="pro-tit">Ultimate Style Bundle - The perfect Head - to - toe look</h4>
        
-        <button class="btno"> ADD TO CART <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-        
-    </a>
-    </div>     
+        <button class="add-to-cart"> ADD TO CART <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+   </div> 
+    </div>
+       
    </section>
 
 
@@ -366,6 +368,27 @@
         </div>
     </div>
   </section>
+
+
+     <div class="cart-modal">
+    <div class="cart-header">
+        <h2>Your Cart</h2>
+        <button class="close-cart">×</button>
+        
+    </div>
+    <div class="cart-items">
+        <!-- Cart items will be dynamically added here -->
+    </div>
+    <a href="cart-summary.html" class="checkout-btn" style="display:block;width:100%;margin-top:12px;padding:12px 0;background:#007bff;color:#fff;text-align:center;border:none;border-radius:4px;font-weight:bold;font-size:16px;text-decoration:none;">Check Out</a>
+    <div class="cart-total">
+        <h3>Total: $<span class="total-amount">0</span></h3>
+    </div>
+</div>
+
+<!-- Notification Toast -->
+<div id="cart-toast" style="display:none;position:fixed;top:30px;right:30px;z-index:9999;background:#222;color:#fff;padding:16px 28px;border-radius:6px;font-size:1rem;box-shadow:0 2px 8px rgba(0,0,0,0.15);transition:opacity 0.3s;opacity:0;">
+  <span id="cart-toast-msg"></span>
+</div>
 
 
 
